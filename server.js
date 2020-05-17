@@ -19,7 +19,7 @@ app.use(cors());
 
 //GET all user
 app.get('/', (req,res)=> {
-    res.json(database.user)
+    res.json('its working')
  })
 
 //SIGNIN 
@@ -112,7 +112,7 @@ app.post('/register', (req,res) =>{
  })
 
 app.listen(process.env.PORT || 80,() => {
-  console.log('app runing on port 80')
+  console.log(`app runing on port ${process.env.PORT}`)
 })
 
 
