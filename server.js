@@ -19,7 +19,7 @@ app.use(cors());
 
 //GET all user
 app.get('/', (req,res)=> {
-    res.json('its working')
+    res.send('its workinggg')
  })
 
 //SIGNIN 
