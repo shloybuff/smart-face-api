@@ -3,6 +3,8 @@ const cors = require('cors');
 const bcrypt = require('bcrypt-nodejs');
 const knex = require('knex');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
+
 const postgres = knex({
     client: 'pg',
     connection: {
