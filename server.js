@@ -111,7 +111,7 @@ app.post('/register', (req,res) =>{
     .catch(err => res.status(400).json('unable to get entries'))   
  })
 
-app.listen(80,() => {
+app.listen(process.env.PORT || 80,() => {
   console.log('app runing on port 80')
 })
 
